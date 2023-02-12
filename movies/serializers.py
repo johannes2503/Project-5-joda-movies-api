@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from movies.models import Movie
+from ratings.models import Rating
 
 class MovieSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
@@ -25,5 +26,6 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'owner', 'is_owner', 'profile_id', 'profile_image', 
             'created_at', 'updated_at', 'title', 'description', 'image', 'movie_genre_filter',
-            'is_owner',
         ]
+        
+        
