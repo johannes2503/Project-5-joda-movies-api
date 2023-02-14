@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Movie(models.Model):
-    
+
     movie_genre_filter_choices = [
         ('action', 'Action'),
         ('horror', 'Horror'),
@@ -12,7 +12,7 @@ class Movie(models.Model):
         ('thriller', 'Thriller'),
         ('comedy', 'Comedy'),
         ('scifi', 'SciFi'),
-        ('romance', 'Romance') 
+        ('romance', 'Romance')
     ]
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
