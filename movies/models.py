@@ -2,9 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-
-
-
 class Movie(models.Model):
     
     movie_genre_filter_choices = [
