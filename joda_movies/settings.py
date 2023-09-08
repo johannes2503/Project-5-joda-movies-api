@@ -36,9 +36,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['joda-movies-api-ada054efb301.herokuapp.com']
+ALLOWED_HOSTS = ['joda-movies-api-ada054efb301.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
