@@ -38,7 +38,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'joda-movies-api-bfcd089e7a9c.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'joda-movies-api-ada054efb301.herokuapp.com/']
 
 
 # Application definition
