@@ -8,6 +8,7 @@ from .serializers import RatingSerializer, MovieSerializer, UserSerializer
 from rest_framework .authentication import TokenAuthentication
 
 class UserViewSet(viewsets.ModelViewSet):
+    """ User view class """
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
